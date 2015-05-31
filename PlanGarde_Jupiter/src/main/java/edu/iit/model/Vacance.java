@@ -2,8 +2,9 @@ package edu.iit.model;
 
 import java.util.Date;
 
-import org.apache.commons.lang.time.DateFormatUtils;
-import org.apache.commons.lang.time.DateUtils;
+
+
+
 
 public class Vacance {
 	private Date  startDate;
@@ -30,11 +31,10 @@ public class Vacance {
 	}
 	@Override
 	public String toString() {
-		String myStartDate = DateFormatUtils.format(startDate, "E dd/MM/yyyy");
-		String myEndDate = DateFormatUtils.format(endDate, "E dd/MM/yyyy");
+		
 
 
-		return "Vacance [startDate=" + myStartDate+ ", endDate=" +myEndDate + "]";
+		return "Vacance [startDate=" + startDate+ ", endDate=" +endDate + "]";
 	}
 	
 
