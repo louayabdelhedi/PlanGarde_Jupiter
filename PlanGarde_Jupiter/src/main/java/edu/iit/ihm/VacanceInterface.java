@@ -110,6 +110,8 @@ public class VacanceInterface extends JFrame {
 		table_2.setBounds(897, 323, -407, 23);
 		contentPane.add(table_2);
 		
+		
+		
 		table_3 = new JTable();
 		table_3.setModel(new DefaultTableModel(
 			new Object[][] {
