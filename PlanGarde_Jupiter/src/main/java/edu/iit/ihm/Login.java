@@ -22,7 +22,7 @@ public class Login extends JDialog {
 	private JTextField nom, Prenom;
 	private JButton bQuiter = new JButton(" Quiter ");
 	private JButton bConncet = new JButton(" Connect ");
-
+	public static Accueil accueil;
 	public Login() {
 		this.setTitle("Login");
 		this.setSize(790, 300);
@@ -59,7 +59,7 @@ public class Login extends JDialog {
 		bConncet.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if((nom.getText().equalsIgnoreCase("admin"))&&(Prenom.getText().equalsIgnoreCase("admin"))){
-				Accueil accueil = new Accueil();
+				accueil = new Accueil();
 				fenLogin.setVisible(false);
 				accueil.setVisible(true);
 				

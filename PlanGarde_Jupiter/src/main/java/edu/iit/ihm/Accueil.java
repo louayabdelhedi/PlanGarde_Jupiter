@@ -235,12 +235,18 @@ public class Accueil extends JDialog {
 
 		bAddV.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				System.exit(EXIT_ON_CLOSE);
+				VacanceInterface frame = new VacanceInterface();
+				frame.show();
+				Login.accueil.setVisible(false);
+			//	System.exit(EXIT_ON_CLOSE);
 			}
 		});
 		bAddP.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				System.exit(EXIT_ON_CLOSE);
+				Preference fenPre = new Preference();
+				fenPre.setVisible(true);
+				Login.accueil.setVisible(false);
+				
 			}
 		});
 
