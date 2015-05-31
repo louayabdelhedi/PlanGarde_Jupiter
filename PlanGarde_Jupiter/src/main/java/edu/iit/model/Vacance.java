@@ -3,8 +3,6 @@ package edu.iit.model;
 import java.util.Date;
 
 
-
-
 public class Vacance {
 	private Date  startDate;
 	private Date endDate;
